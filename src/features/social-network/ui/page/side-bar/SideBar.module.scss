@@ -1,14 +1,30 @@
-@import "s/colors";
+@use "s/colors";
+@use "s/font";
+@use "s/shadow";
 
 .sideBar {
   padding: 20px;
-  background-color: $secondary-color;
+  background-color: colors.$secondary-color;
+
+  max-width: 30%;
+  width: 100%;
+  height: calc(100vh - 120px - 100px);
+  overflow: auto;
+  scrollbar-color: colors.$font-color colors.$secondary-color;
 
   ul {
-    font-size: 1.5em;
+    font-size: font.$size-side-bar;
+    position: sticky;
+    //top: calc(120px + 20px);
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     li {
       margin-bottom: 20px;
+      box-shadow: shadow.$block-shadow;
+      border-radius: 5px;
     }
   }
 }

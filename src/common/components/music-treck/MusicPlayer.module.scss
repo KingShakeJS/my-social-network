@@ -1,0 +1,64 @@
+@use "s/colors";
+
+.MusicPlayer {
+  display: flex;
+  gap: 10px;
+  border: 1px solid colors.$primary-color;
+  padding: 5px;
+  border-radius: 15px;
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+
+  img {
+    width: 70px;
+    border-radius: 5px;
+  }
+
+  .btnTime {
+    display: flex;
+    justify-content: space-between;
+    color: colors.$primary-color;
+    width: 100%;
+
+    .startStop {
+      width: 30px;
+      height: 30px;
+      border: unset;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bolder;
+      font-size: 1em;
+      background-color: colors.$primary-color;
+      color: colors.$mega-color;
+    }
+
+    .volume {
+      position: absolute;
+      right: 30px;
+      height: 40px;
+      display: flex;
+
+      input {
+        width: 50px;
+      }
+    }
+
+    .time {
+      color: colors.$primary-color;
+      width: 100%;
+    }
+  }
+
+  .progressLine {
+    color: colors.$primary-color;
+    width: 100%;
+  }
+
+  .controlls {
+    width: 100%;
+    //background-color: red;
+  }
+}

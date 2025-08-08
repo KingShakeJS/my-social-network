@@ -1,0 +1,9 @@
+@use "s/shadow";
+
+@mixin profile-content-block($width: 60%) {
+  box-shadow: shadow.$block-shadow-second;
+  padding: 10px;
+  width: $width;
+  height: 350px;
+  border-radius: 10px;
+}

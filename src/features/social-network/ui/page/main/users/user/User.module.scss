@@ -1,0 +1,9 @@
+@use "s/colors";
+@use "s/shadow";
+
+.User {
+  border: 2px solid colors.$border-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: shadow.$block-shadow;
+}

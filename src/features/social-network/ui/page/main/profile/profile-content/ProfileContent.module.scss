@@ -1,0 +1,6 @@
+@use "s/shadow";
+@use "s/mixins";
+
+.ProfileContent {
+  @include mixins.profile-content-block;
+}

@@ -1,0 +1,12 @@
+@use "s/colors";
+@use "s/font";
+
+.Main {
+  background-color: colors.$mega-color;
+  font-size: 1.2em;
+  width: 100%;
+  z-index: 2;
+  height: calc(100vh - 120px - 100px);
+  overflow: auto;
+  scrollbar-color: colors.$font-color colors.$mega-color;
+}

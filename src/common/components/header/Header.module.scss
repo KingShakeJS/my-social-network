@@ -1,11 +1,16 @@
-@import "s/colors";
+@use "s/colors";
+@use "s/font";
 
 .header {
-  background-color: $primary-color;
-  font-size: 2em;
+  background-color: colors.$primary-color;
+  font-size: font.$size-header;
   display: flex;
   justify-content: space-around;
   padding: 5px;
+  position: sticky;
+  height: 120px;
+  top: 0;
+  z-index: 999;
 
   .content {
     display: flex;

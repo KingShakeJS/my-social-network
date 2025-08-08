@@ -1,0 +1,13 @@
+@use "s/colors";
+
+.Footer {
+  background-color: colors.$footer-color;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
+}

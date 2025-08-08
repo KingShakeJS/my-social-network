@@ -1,0 +1,11 @@
+@use "s/colors";
+
+.MyBtn {
+  border-radius: 5px;
+  border: unset;
+  padding: 10px;
+  background-color: colors.$font-color;
+  color: colors.$font-second-color;
+  height: 40px;
+  width: 100%;
+}
