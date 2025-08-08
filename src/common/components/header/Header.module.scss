@@ -1,0 +1,14 @@
+@import "s/colors";
+
+.header {
+  background-color: $primary-color;
+  font-size: 2em;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+
+  .content {
+    display: flex;
+    align-items: center;
+  }
+}
