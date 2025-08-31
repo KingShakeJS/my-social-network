@@ -67,7 +67,14 @@ export const MusicPlayer = () => {
           <div className={s.time}>
             {formatTime(audioRef?.current?.currentTime)} / {formatTime(duration)}
           </div>
-          <div onMouseOver={() => setTogleVolume(true)} onMouseOut={() => setTogleVolume(false)}>
+          <div
+            onMouseOver={() => setTogleVolume(true)}
+            onMouseOut={() => {
+              setTimeout(() => {
+                setTogleVolume(false)
+              }, 1000)
+            }}
+          >
             <div className={s.volume}>
               {togleVolume && (
                 <input

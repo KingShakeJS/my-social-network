@@ -1,3 +1,3 @@
 export const ProfileContentPhoto = () => {
-  return <div></div>
+  return <div>ProfileContentPhoto</div>
 }
